@@ -47,7 +47,24 @@ body{
      height: 15%;
      top: 50;
      left: 0;
-}   
+} 
+.credits{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+} 
+.credits p{
+    font-size: 0.80rem;
+}
+.credits a{
+    color: #fff;
+    transition: 0.5s;
+}
+.credits a:hover{
+    color: #000;
+    
+}
 .right{
    flex: 6;
    font-size: 1.3rem;
@@ -115,10 +132,15 @@ form{
     min-width: 200px;
     background-color: #b4906a;
     border-radius: 5px;
-    color: #ffffff;
+    color: #000000;
     font-weight: 600;
     font-size: 1.1rem;
     border: none;
+    transition: 0.2s;
+}
+.createAcc:hover{
+    background-color: #3b2d1e;
+    color: #fff;
 }
 .log{
     font-size: 1.2rem;
@@ -130,7 +152,11 @@ form{
     text-decoration: none;
     color: #b4906a;
     font-weight: 600;
+    transition: .2s;
     
+}
+.log a:hover{
+    color: #3b2d1e;
 }
 
 
