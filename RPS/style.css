@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+        width: 100%;
+        height: 100%;
+        background-color: #fffffe;
+        color: #1b2d45 ;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   row-gap: 50px;
+}
+h1{
+    font-size: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.scoreBoard{
+    background-color: #1b2d45;
+    width: 30vw;
+    height: 10vh;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scoreBoard span {
+    padding: 40px;
+    font-size: 4rem;
+}
+.winner{
+    width: 30vw;
+    height: 10vh;
+}
+.buttons{
+    display: flex;
+    gap: 50px;   
+}
+.btn{
+    border: none;
+}
+.btn img{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(230, 216, 216);
+    transition: .3s ease;
+}
+
+.btn, img:hover{
+    width: 150px;
+    height: 170px;
+    background-color: #1b2d45;
+}
+.btn img:active{
+    width: 150px;
+    height: 173px;
+    background-color: #1b2d45;
+}
+
+#reset{
+    width: 150px;
+    height: 60px;
+    font-size: 1.3rem;
+    background-color: #1b2d45;
+    color: #fffffe;
+    font-weight: 600;
+    border: none;
+    transition: 0.2s;
+}
+#reset:hover{
+    background-color: #1b2d45e3;
+
+}
+#reset:active{
+    background-color: #1b2d45;
+}

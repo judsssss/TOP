@@ -3,24 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            font-size: 3rem;
-        }
-        div{
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
-        }
-    </style>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
+    <div class="container">
          <h1>ROCK PAPER SCISSOR Game</h1>
-    <p>Open Console log to play game...</p>
+         <div class="scoreBoard">PLAYER<span class="player">00</span> Score <span class="comp">00</span>COMPUTER</div>
+         <div id="result"></div>
+         <div class="buttons">
+                <button class="btn" id="rockBtn"><img src="img/rock.png" alt="" width="50px"></button>
+                <button class="btn" id="paperBtn"><img src="img/paper.png" alt="" width="50px"></button>
+                <button class="btn" id="scissorsBtn"><img src="img/scissors.png" alt="" width="50px"></button>  
+         </div>
+
+        <div id="result-block"></div>
+
+        <button id="reset"> Reset Game</button>
     </div>
 
     <script src="script.js"></script>
