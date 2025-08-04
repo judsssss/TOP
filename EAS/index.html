@@ -7,8 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Sketch a etch</h1>
+        <h4 class="status">Status: </h4>
+        <div class="buttons">
+            <button id="blkBtn">Black</button>
+            <button id="eraserBtn">Eraser</button>
+            <button id="randomBtn">Random</button>
+            <label for="colorPicker">Choose Color</label>
+            <input type="color" name="colorPicker" id="colorPicker">
+        </div>
+        <div class="sizeBtn">  <label for="size">Board size: </label>
+            <input type="text" name="size" id="size" placeholder="Enter the size" onchange = "changeSize(this.value)">
+            <button class="Sizebtn" onclick="changeSize(document.getElementById('size').value)">size</button></div>
+        <div class="boardContainer">
 
+        </div>
+        <button id="resetBtn">Reset</button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
