@@ -8,23 +8,31 @@
 </head>
 <body>
     <div class="container">
-        <h1>Sketch a etch</h1>
-        <h4 class="status">Status: </h4>
+        <h1 class="title">Etch-a-Sketch</h1>
         <div class="buttons">
-            <button id="blkBtn">Black</button>
-            <button id="eraserBtn">Eraser</button>
-            <button id="randomBtn">Random</button>
-            <label for="colorPicker">Choose Color</label>
-            <input type="color" name="colorPicker" id="colorPicker">
+            <button class="colorBtn" id="blkBtn">Black</button>
+            <button class="colorBtn"  id="eraserBtn">Eraser</button>
+            <button class="colorBtn"  id="randomBtn"><span class="ran">Random</span></button>
+        </div>
+        <div class="colorPick">
+              <label>Choose Color:</label>
+            <input class="colorP"  type="color" name="colorPicker" id="colorPicker">
         </div>
         <div class="sizeBtn">  <label for="size">Board size: </label>
             <input type="text" name="size" id="size" placeholder="Enter the size" onchange = "changeSize(this.value)">
-            <button class="Sizebtn" onclick="changeSize(document.getElementById('size').value)">size</button></div>
+            <button class="Sizebtn" onclick="changeSize(document.getElementById('size').value)">Enter</button></div>
+            <div class="status-mode">
+                 <h4 class="status">Status: </h4>
+                 <h4 class="mode" id="mode">Mode: </h4>
+            </div>
         <div class="boardContainer">
 
         </div>
+        
         <button id="resetBtn">Reset</button>
+
     </div>
+    <footer><p>© judsDev</p></footer>
     <script src="script.js"></script>
 </body>
 </html>
