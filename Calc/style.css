@@ -12,7 +12,7 @@ h1{
     font-size: 3rem;
 }
 main{
-    height: 100vh;
+    height: 90vh;
      display: flex;
     justify-content: center;
     align-items: center;
@@ -67,7 +67,7 @@ main{
 }
 
  footer{
-   margin-top: 0.5rem;
+    margin-top: 0.5rem;
   padding: 1rem 0;
   text-align: center;
   font-family: 'Recursive', sans-serif;
@@ -76,5 +76,5 @@ main{
    width:100%;
   background-color: #0e172c;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
-
+  height: 10vh;
  }
