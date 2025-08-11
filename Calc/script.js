@@ -19,7 +19,7 @@ let buttonValues = [
     "7", "8", "9", "x",
     "4", "5", "6", "-",
     "1", "2", "3", "+",
-    "0", ".", "="
+    "0",  ".", "⌫", "="
 ];
 
 let rightSymbols = ["÷", "x", "-", "+","="];
@@ -29,6 +29,15 @@ let A = 0;
 let operators = null;
 let B = null;
 let justCalculated = false;
+//keyboard
+document.addEventListener("keydown", function (event) {
+    if (event.key === "Backspace") {
+        event.preventDefault(); // stops browser navigation
+        if (display.value.length > 0) {
+            display.value = display.value.slice(0, -1);
+        }
+    }
+});
 
 function clearAll(){
      A = 0;
@@ -42,10 +51,6 @@ for (let i = 0; i < buttonValues.length;i++){
     let value = buttonValues[i];
     let button = document.createElement("button");
     button.innerText = value;
-    if (value === "0"){
-        button.style.width = "180px";
-        button.style.gridColumn ="span 2";
-    }
     if (rightSymbols.includes(value)){
         button.style.backgroundColor = "#ff9500";
     }else if (topSymbols.includes(value)){
@@ -54,6 +59,13 @@ for (let i = 0; i < buttonValues.length;i++){
     }
 
     button.addEventListener("click", function() {
+//backspace button
+         if (value === "⌫") {
+    if (display.value.length > 0) {
+        display.value = display.value.slice(0, -1);
+    }
+    return;
+}
         if (rightSymbols.includes(value)){ 
             if (value == "="){
                 if (A != null){

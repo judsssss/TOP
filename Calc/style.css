@@ -53,8 +53,6 @@ main{
     border-radius: 10px;
     transition: 0.2s;
     border: none;
-
-    
 }
 
 #buttons button:hover{
