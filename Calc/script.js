@@ -26,9 +26,17 @@ let rightSymbols = ["÷", "x", "-", "+","="];
 let topSymbols =["AC", "+/-", "%"];
 
 let A = 0;
-let operators = null;
+let operator = null;
 let B = null;
 let justCalculated = false;
+
+function clearAll(){
+     A = 0;
+     operator = null;
+     B = null;
+
+}
+const display = document.getElementById("display");
 //keyboard
 document.addEventListener("keydown", function (event) {
     if (event.key === "Backspace") {
@@ -38,14 +46,6 @@ document.addEventListener("keydown", function (event) {
         }
     }
 });
-
-function clearAll(){
-     A = 0;
-     operators = null;
-     B = null;
-
-}
-const display = document.getElementById("display");
 
 for (let i = 0; i < buttonValues.length;i++){
     let value = buttonValues[i];
