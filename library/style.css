@@ -308,6 +308,11 @@ body{
 .deleteCard:hover{
     transform: scale(1.02);
 }
+.deleteCard:active{
+    transform: scale(1.05);
+    color: #000;
+
+}
 
 .bgcontainer{
     background-color: #a7a9be;
