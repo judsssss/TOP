@@ -8,48 +8,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="nav-sec">
-        <h1 class="logo">My.Library</h1>
-        <button class="addBtn" id="addBtn">Add New Book</button>
-    </nav>
+        <nav class="nav-sec">
+            <h1 class="logo">My.Library</h1>
+            <button class="addBtn" id="add-form">Add New Book</button>
+        </nav>
 
-    <main class="main-section">
-        <div class="input-pop" id="input-pop">
+        <main class="main-section">
+            <div class="input-pop" id="input-pop">
+                <button class="close" id="close">X</button>
+                <h3 class="tBook">Add new Book</h3>
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" id="title" placeholder="Enter book title">
+                </div>
+
+                <div class="form-group">
+                    <label for="author">Author</label>
+                    <input type="text" name="author" id="author" placeholder="Enter book author">
+                </div>
+
+                <div class="form-group">
+                    <label for="pages">Pages</label>
+                    <input type="number" name="pages" id="pages" placeholder="Enter book pages">
+                </div>  
+
+                <div class="form-group checkbox-group">
+                    <label for="reading-stats">
+                        <input type="checkbox" name="reading-stats" id="reading-stats">
+                        Read
+                    </label>
+                </div>
+
+                <div class="adBtn">
+                <input type="submit" name="addBookBtn" class="addBookBtn" id="addBookBtn" value="Add Book">
+                </div>
+            </div>
+
+        <div class="content-container" id="content-container">
+
+            </div>  
             
-            <button class="close" id="close">X</button>
-
-    <div class="form-group">
-        <label for="title">Title</label>
-        <input type="text" name="title" id="title" placeholder="Enter book title">
-    </div>
-
-    <div class="form-group">
-        <label for="author">Author</label>
-        <input type="text" name="author" id="author" placeholder="Enter book author">
-    </div>
-
-    <div class="form-group">
-        <label for="pages">Pages</label>
-        <input type="number" name="pages" id="pages" placeholder="Enter book pages">
-    </div>  
-
-    <div class="form-group checkbox-group">
-        <label for="reading-stats">
-            <input type="checkbox" name="reading-stats" id="reading-stats">
-            Read
-        </label>
-    </div>
-
-    <div class="adBtn">
-        <button class="addBookBtn" id="addBookBtn">Add Book</button>
-    </div>
-
-</div>
-
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div> 
-        </div>
+           
 
     </main>
     <script src="script.js"></script>
